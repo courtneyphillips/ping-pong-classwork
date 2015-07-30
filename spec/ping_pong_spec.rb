@@ -1,3 +1,6 @@
+require('ping_pong')
+require('rspec')
+
 # plain English version of specs:
 
 # it will count up to the given number
@@ -15,6 +18,8 @@
 # it will replace any number divisible by 5 with the word "pong"
 # ie: 5, 10, 15, etc. will all be replaced by "pong" wherever they occur.
 #
+
+
 
 describe("Fixnum#ping_pong") do
   it("will count up to the given number") do
