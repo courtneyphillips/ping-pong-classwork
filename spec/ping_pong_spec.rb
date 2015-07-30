@@ -26,4 +26,9 @@ describe("Fixnum#ping_pong") do
     numbers = 7.ping_pong()
     expect(numbers.last).to(eq(7))
   end
+
+  it("will replace the number 3 with the word ping") do
+    expect(3.ping_pong()).to(eq([1, 2, "ping"]))
+  end
+
 end
