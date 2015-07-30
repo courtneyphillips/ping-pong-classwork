@@ -31,4 +31,8 @@ describe("Fixnum#ping_pong") do
     expect(3.ping_pong()).to(eq([1, 2, "ping"]))
   end
 
+  it("will replace any number divisible by 3 with the word ping") do
+    expect(6.ping_pong()).to(eq([1, 2, "ping", 4, 5, "ping"]))
+  end
+
 end
