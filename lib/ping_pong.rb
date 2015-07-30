@@ -7,6 +7,8 @@ class Fixnum
       number = number.+(1)
       if number.%(3) == 0
         numbers.push("ping")
+      elsif number.%(5) == 0
+        numbers.push("pong")
       else
       numbers.push(number)
       end
